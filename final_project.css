@@ -1,0 +1,40 @@
+.header {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+body
+{
+	position: absolute;
+}
+.order {
+	display: none;
+	position: center;
+	width: 300px;
+	height: 350px;
+	padding: 30px;
+}
+.update {
+	display: none;
+	position: absolute;
+	width: 300px;
+	height: 350px;
+	padding: 30px;
+}
+.cancel {
+	display: none;
+	position: relative;
+	width: 300px;
+	height: 350px;
+	padding: 30px;
+}
+.show {
+	display: none;
+	position: relative;
+	width: 300px;
+	height: 300px;
+	padding: 30px;
+}
+input {
+  width: 100%;
+}

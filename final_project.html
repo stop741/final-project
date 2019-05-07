@@ -1,0 +1,57 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  	<script src="keys.js"></script>
+  	<script src="final_project.js"></script>
+  	<link rel="stylesheet" type="text/css" href="final_project.css">
+</head>
+<body>
+	<div class='header'>
+		<img src="https://www.kennywood.com/sites/kennywood.com/files/pcore_tiers/Kennywood_shopping_Arcade_Gift_Shop.jpg" alt="Cinque Terre" width="800" height="300">
+	</div>
+	<div class="container">
+		<div class="menu">
+			<input id='new_order' type="submit" value="New Order"><br>
+			<input id="show_update" type="submit" value="Edit Order"><br>
+			<input id="show_cancel" type="submit" value="Cancel Order"><br>
+		</div>
+			<form  class='order'><!-- her box style-->
+				<label for='username'>Your Name*:</label>
+				<input type='text' placeholder="Enter your Username" id='username' required/><br>
+				<label for="email">Your Email*:</label>
+				<input type="email" placeholder="Enter your Email" id="email" required/><br>
+				<label for="msg_input">enter your order information*:</label>
+				<input type="text" placeholder="Enter your order information"id="msg_input" required/><br>
+				<div>
+					<label for='gift'>search for gift style:</label>
+					<input id="gift_style" type="text" placeholder="Enter gift style"name="gift">
+					<input id="search_gift" type="submit" value="seach">
+					<div id ="gift_pic">
+					</div>
+				</div>
+				<input id='order_submit' type="submit" value="Submit">
+			</form>
+			<form class = 'update'>
+				<label for="id_edit">Enter ID of your order:</label>
+				<input id ="id_edit" type="text" placeholder="Enter your id of order to edit" required/>
+				<!-- <label for="name_update">Update your name:</label>
+				<input id="name_update" type="text" placeholder="Enter your name">
+				<label for="email_update">Update your email:</label>
+				<input id="email_update" type="text" placeholder="Enter your email"> -->
+				<label for="info_update">Update your order information:</label>
+				<input id="info_update" type="text" placeholder="Enter your order information">
+				<input id="submit_update"type="submit" value="Submit">
+			</form>
+			<form class='cancel'>
+				<label for="order_cancel">order cancel</label>
+				<input id="id_cancel" type="text" placeholder="Enter your order ID to cancel"name="order_cancel">
+				<input id="submit_cancel"type="submit" value="Cancel">
+			</form>
+			<form class='show'>
+				<h id='show_info'>Your order information:</h>
+			</form>
+	</div>
+</body>
